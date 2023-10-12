@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>LibraryEF_Design</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="StaticFiles\close_icon.png" />
+    <None Remove="StaticFiles\close_mo_icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="LibraryEF-Context">
+      <HintPath>..\..\LibraryEF-Context\LibraryEF-Context\bin\Debug\net6.0\LibraryEF-Context.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="StaticFiles\Images\close_icon.png" />
+    <Resource Include="StaticFiles\Images\close_mo_icon.png" />
+  </ItemGroup>
+
+</Project>
