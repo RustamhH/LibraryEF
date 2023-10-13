@@ -10,7 +10,40 @@
     <Compile Update="Views\AuthorsPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\BooksPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\CategoriesPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\DepartmentsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\FacultiesPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\GroupsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\LibsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\MainView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\PressPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\StudentsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\S_CardsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ThemesPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\T_CardsPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -21,7 +54,40 @@
     <Page Update="Views\AuthorsPage.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Views\BooksPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\CategoriesPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\DepartmentsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\FacultiesPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\GroupsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\LibsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\MainView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\PressPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\StudentsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\S_CardsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ThemesPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\T_CardsPage.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -9,6 +9,13 @@
       Title="AuthorsPage">
 
     <Grid>
-        <DataGrid x:Name="AuthorsDataGrid" ItemsSource="{Binding Authors}"/>
+        <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Authors,UpdateSourceTrigger=PropertyChanged}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id,Mode=TwoWay}"></DataGridTextColumn>
+                <DataGridTextColumn Header="FirstName" Binding="{Binding FirstName,Mode=TwoWay}"></DataGridTextColumn>
+                <DataGridTextColumn Header="LastName" Binding="{Binding LastName,Mode=TwoWay}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Height="100" Width="100" Command="{Binding AddCommand}"></Button>
     </Grid>
 </Page>

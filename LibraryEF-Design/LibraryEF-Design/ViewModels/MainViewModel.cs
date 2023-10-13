@@ -7,14 +7,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace LibraryEF_Design.ViewModels
 {
+    public static class cont
+    { 
+       public static LibraryDbContext dbContext { get; set; } = new();
+    }
     public class MainViewModel
     {
-        public LibraryDbContext dbContext { get; set; } = new();
         public RelayCommand? CloseAppCommand { get; set; }
+
+
+
         public RelayCommand? OpenAuthorsTableCommand { get; set; }
 
 
@@ -27,7 +34,7 @@ namespace LibraryEF_Design.ViewModels
         }
         public void OpenAuthorsTable(object?param)
         {
-            currentFrame.Content = new AuthorsPage(dbContext.Authors);
+            currentFrame.Content = new AuthorsPage(cont.dbContext.Authors);
         }
 
 
