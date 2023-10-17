@@ -85,3 +85,5 @@ D:\ADO.NET\LibraryEF\LibraryEF-Design\LibraryEF-Design\obj\Debug\net6.0-windows\
 D:\ADO.NET\LibraryEF\LibraryEF-Design\LibraryEF-Design\obj\Debug\net6.0-windows\Views\S_CardsPage.baml
 D:\ADO.NET\LibraryEF\LibraryEF-Design\LibraryEF-Design\obj\Debug\net6.0-windows\Views\ThemesPage.baml
 D:\ADO.NET\LibraryEF\LibraryEF-Design\LibraryEF-Design\obj\Debug\net6.0-windows\Views\T_CardsPage.baml
+D:\ADO.NET\LibraryEF\LibraryEF-Design\LibraryEF-Design\obj\Debug\net6.0-windows\Views\TeachersPage.g.cs
+D:\ADO.NET\LibraryEF\LibraryEF-Design\LibraryEF-Design\obj\Debug\net6.0-windows\Views\TeachersPage.baml

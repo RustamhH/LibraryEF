@@ -13,9 +13,11 @@ namespace LibraryEF_Context.Configurations
     {
         public void Configure(EntityTypeBuilder<S_Card> builder)
         {
+            builder.Property(p => p.Id).ValueGeneratedNever();
+
             builder.HasKey(b => b.Id);
-            builder.Property(b => b.DateIn).IsRequired();
-            builder.Property(b => b.DateOut).IsRequired();
+            builder.Property(b => b.DateIn).IsRequired(false);
+            builder.Property(b => b.DateOut).IsRequired().HasDefaultValue(DateTime.Now);
 
 
             builder.HasOne(b => b.Book).WithMany(b => b.S_Cards).HasForeignKey(b => b.Id_Book);

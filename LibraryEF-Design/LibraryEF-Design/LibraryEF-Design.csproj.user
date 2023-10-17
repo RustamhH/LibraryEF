@@ -40,6 +40,9 @@
     <Compile Update="Views\S_CardsPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\TeachersPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\ThemesPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -82,6 +85,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\S_CardsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\TeachersPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\ThemesPage.xaml">

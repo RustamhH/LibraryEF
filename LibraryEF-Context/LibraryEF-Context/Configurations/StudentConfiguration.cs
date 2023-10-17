@@ -13,6 +13,8 @@ namespace LibraryEF_Context.Configurations
     {
         public void Configure(EntityTypeBuilder<Student> builder)
         {
+            builder.Property(p => p.Id).ValueGeneratedNever();
+
             builder.HasKey(b => b.Id);
             builder.Property(b => b.FirstName).IsRequired();
             builder.Property(b => b.LastName).IsRequired();

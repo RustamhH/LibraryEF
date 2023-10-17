@@ -13,11 +13,13 @@ namespace LibraryEF_Context.Configurations
     {
         public void Configure(EntityTypeBuilder<Book> builder)
         {
+            builder.Property(p => p.Id).ValueGeneratedNever();
+
             builder.HasKey(b => b.Id);
             builder.Property(b => b.Name).IsRequired();
             builder.Property(b => b.Pages).IsRequired();
             builder.Property(b => b.Quantity).IsRequired();
-            builder.Property(b => b.Comment).IsRequired();
+            builder.Property(b => b.Comment).IsRequired(false);
             builder.Property(b => b.YearPress).IsRequired();
 
 

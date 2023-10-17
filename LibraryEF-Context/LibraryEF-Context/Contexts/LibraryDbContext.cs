@@ -30,6 +30,7 @@ namespace LibraryEF_Context.Contexts
             modelBuilder.ApplyConfiguration(new S_CardConfiguration());
             modelBuilder.ApplyConfiguration(new StudentConfiguration());
             modelBuilder.ApplyConfiguration(new T_CardConfiguration());
+            modelBuilder.ApplyConfiguration(new TeacherConfiguration());
             modelBuilder.ApplyConfiguration(new ThemeConfiguration());
             base.OnModelCreating(modelBuilder);
         }

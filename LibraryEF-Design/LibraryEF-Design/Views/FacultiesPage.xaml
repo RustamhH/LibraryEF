@@ -9,6 +9,12 @@
       Title="FacultiesPage">
 
     <Grid>
-        
+        <DataGrid VerticalScrollBarVisibility="Visible" Name="datagrid" AutoGenerateColumns="False" ItemsSource="{Binding Faculties, UpdateSourceTrigger=PropertyChanged}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id, Mode=TwoWay}" />
+                <DataGridTextColumn Header="Name" Binding="{Binding Name, Mode=TwoWay}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button HorizontalAlignment="Right" VerticalAlignment="Top" Margin="5" Content="Save Changes" Width="120" Height="30" Command="{Binding SaveChangesCommand}" />
     </Grid>
 </Page>

@@ -9,6 +9,16 @@
       Title="S_CardsPage">
 
     <Grid>
-        
+        <DataGrid VerticalScrollBarVisibility="Visible" Name="datagrid" AutoGenerateColumns="False" ItemsSource="{Binding S_Cards, UpdateSourceTrigger=PropertyChanged}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id, Mode=TwoWay}" />
+                <DataGridTextColumn Header="Id_Book" Binding="{Binding Id_Book, Mode=TwoWay}" />
+                <DataGridTextColumn Header="Id_Student" Binding="{Binding Id_Student, Mode=TwoWay}" />
+                <DataGridTextColumn Header="Id_Lib" Binding="{Binding Id_Lib, Mode=TwoWay}" />
+                <DataGridTextColumn Header="DateIn" Binding="{Binding DateIn, Mode=TwoWay}" />
+                <DataGridTextColumn Header="DateOut" Binding="{Binding DateOut, Mode=TwoWay}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button HorizontalAlignment="Right" VerticalAlignment="Top" Margin="5" Content="Save Changes" Width="120" Height="30" Command="{Binding SaveChangesCommand}" />
     </Grid>
 </Page>

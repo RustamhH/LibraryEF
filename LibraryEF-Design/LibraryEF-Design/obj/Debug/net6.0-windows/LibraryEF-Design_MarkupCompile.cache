@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\ADO.NET\LibraryEF\LibraryEF-Design\LibraryEF-Design\App.xaml
-141262432813
+15756821942
 
-30655552970
+331182771290
 22082542198
-ResourceDictionaries\StylesRD.xaml;Views\AuthorsPage.xaml;Views\BooksPage.xaml;Views\CategoriesPage.xaml;Views\DepartmentsPage.xaml;Views\FacultiesPage.xaml;Views\GroupsPage.xaml;Views\LibsPage.xaml;Views\MainView.xaml;Views\PressPage.xaml;Views\StudentsPage.xaml;Views\S_CardsPage.xaml;Views\ThemesPage.xaml;Views\T_CardsPage.xaml;
+ResourceDictionaries\StylesRD.xaml;Views\AuthorsPage.xaml;Views\BooksPage.xaml;Views\CategoriesPage.xaml;Views\DepartmentsPage.xaml;Views\FacultiesPage.xaml;Views\GroupsPage.xaml;Views\LibsPage.xaml;Views\MainView.xaml;Views\PressPage.xaml;Views\StudentsPage.xaml;Views\S_CardsPage.xaml;Views\TeachersPage.xaml;Views\ThemesPage.xaml;Views\T_CardsPage.xaml;
 
 False
 

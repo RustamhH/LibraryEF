@@ -23,10 +23,11 @@ namespace LibraryEF_Design.Views
     /// </summary>
     public partial class AuthorsPage : Page
     {
-        public AuthorsPage(DbSet<Author>authors)
+        public AuthorsPage()
         {
             InitializeComponent();
-            DataContext = new AuthorsPageModel(authors);
+            DataContext = new AuthorsPageModel();
+            datagrid.Items.Clear();
         }
 
         

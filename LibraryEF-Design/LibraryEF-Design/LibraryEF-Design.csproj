@@ -25,10 +25,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Resource Include="StaticFiles\Images\close_icon.png" />
     <Resource Include="StaticFiles\Images\close_mo_icon.png" />
   </ItemGroup>

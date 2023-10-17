@@ -9,6 +9,15 @@
       Title="StudentsPage">
 
     <Grid>
-        
+        <DataGrid VerticalScrollBarVisibility="Visible" Name="datagrid" AutoGenerateColumns="False" ItemsSource="{Binding Students, UpdateSourceTrigger=PropertyChanged}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id, Mode=TwoWay}" />
+                <DataGridTextColumn Header="FirstName" Binding="{Binding FirstName, Mode=TwoWay}" />
+                <DataGridTextColumn Header="LastName" Binding="{Binding LastName, Mode=TwoWay}" />
+                <DataGridTextColumn Header="Id_Group" Binding="{Binding Id_Group, Mode=TwoWay}" />
+                <DataGridTextColumn Header="Term" Binding="{Binding Term, Mode=TwoWay}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button HorizontalAlignment="Right" VerticalAlignment="Top" Margin="5" Content="Save Changes" Width="120" Height="30" Command="{Binding SaveChangesCommand}" />
     </Grid>
 </Page>

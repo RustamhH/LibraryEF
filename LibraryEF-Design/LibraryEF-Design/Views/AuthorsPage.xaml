@@ -9,13 +9,13 @@
       Title="AuthorsPage">
 
     <Grid>
-        <DataGrid AutoGenerateColumns="False" ItemsSource="{Binding Authors,UpdateSourceTrigger=PropertyChanged}">
+        <DataGrid VerticalScrollBarVisibility="Visible" Name="datagrid" AutoGenerateColumns="False" ItemsSource="{Binding Authors, UpdateSourceTrigger=PropertyChanged}">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Id" Binding="{Binding Id,Mode=TwoWay}"></DataGridTextColumn>
-                <DataGridTextColumn Header="FirstName" Binding="{Binding FirstName,Mode=TwoWay}"></DataGridTextColumn>
-                <DataGridTextColumn Header="LastName" Binding="{Binding LastName,Mode=TwoWay}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id, Mode=TwoWay}" />
+                <DataGridTextColumn Header="FirstName" Binding="{Binding FirstName, Mode=TwoWay}" />
+                <DataGridTextColumn Header="LastName" Binding="{Binding LastName, Mode=TwoWay}" />
             </DataGrid.Columns>
         </DataGrid>
-        <Button Height="100" Width="100" Command="{Binding AddCommand}"></Button>
+        <Button HorizontalAlignment="Right" VerticalAlignment="Top" Margin="5" Content="Save Changes" Width="120" Height="30" Command="{Binding SaveChangesCommand}" />
     </Grid>
 </Page>

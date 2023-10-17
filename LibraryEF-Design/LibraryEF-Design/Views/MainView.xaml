@@ -95,18 +95,18 @@
                 <ScrollViewer>
                     <StackPanel>
                         <Button Command="{Binding OpenAuthorsTableCommand}" Height="40" FontFamily="/StaticFiles/Fonts/Roboto-Regular.ttf #Roboto Regular" Content="Authors"></Button>
-                        <Button Height="40" FontFamily="/StaticFiles/Fonts/Roboto-Regular.ttf #Roboto Regular" Content="Books"></Button>
-                        <Button Height="40" FontFamily="/StaticFiles/Fonts/Roboto-Regular.ttf #Roboto Regular" Content="Categories" ></Button>
-                        <Button Height="40" FontFamily="/StaticFiles/Fonts/Roboto-Regular.ttf #Roboto Regular" Content="Departments"></Button>
-                        <Button Height="40" FontFamily="/StaticFiles/Fonts/Roboto-Regular.ttf #Roboto Regular" Content="Faculties"></Button>
-                        <Button Height="40" FontFamily="/StaticFiles/Fonts/Roboto-Regular.ttf #Roboto Regular" Content="Groups"></Button>
-                        <Button Height="40" FontFamily="/StaticFiles/Fonts/Roboto-Regular.ttf #Roboto Regular" Content="Libs"></Button>
-                        <Button Height="40" FontFamily="/StaticFiles/Fonts/Roboto-Regular.ttf #Roboto Regular" Content="Press"></Button>
-                        <Button Height="40" FontFamily="/StaticFiles/Fonts/Roboto-Regular.ttf #Roboto Regular" Content="S_Cards"></Button>
-                        <Button Height="40" FontFamily="/StaticFiles/Fonts/Roboto-Regular.ttf #Roboto Regular" Content="Students"></Button>
-                        <Button Height="40" FontFamily="/StaticFiles/Fonts/Roboto-Regular.ttf #Roboto Regular" Content="T_Cards"></Button>
-                        <Button Height="40" FontFamily="/StaticFiles/Fonts/Roboto-Regular.ttf #Roboto Regular" Content="Teachers"></Button>
-                        <Button Height="40" FontFamily="/StaticFiles/Fonts/Roboto-Regular.ttf #Roboto Regular" Content="Themes"></Button>
+                        <Button Command="{Binding OpenBooksTableCommand}" Height="40" FontFamily="/StaticFiles/Fonts/Roboto-Regular.ttf #Roboto Regular" Content="Books"></Button>
+                        <Button Command="{Binding OpenCategoriesTableCommand}" Height="40" FontFamily="/StaticFiles/Fonts/Roboto-Regular.ttf #Roboto Regular" Content="Categories" ></Button>
+                        <Button Command="{Binding OpenDepartmentsTableCommand}" Height="40" FontFamily="/StaticFiles/Fonts/Roboto-Regular.ttf #Roboto Regular" Content="Departments"></Button>
+                        <Button Command="{Binding OpenFacultiesTableCommand}" Height="40" FontFamily="/StaticFiles/Fonts/Roboto-Regular.ttf #Roboto Regular" Content="Faculties"></Button>
+                        <Button Command="{Binding OpenGroupsTableCommand}" Height="40" FontFamily="/StaticFiles/Fonts/Roboto-Regular.ttf #Roboto Regular" Content="Groups"></Button>
+                        <Button Command="{Binding OpenLibsTableCommand}" Height="40" FontFamily="/StaticFiles/Fonts/Roboto-Regular.ttf #Roboto Regular" Content="Libs"></Button>
+                        <Button Command="{Binding OpenPressTableCommand}" Height="40" FontFamily="/StaticFiles/Fonts/Roboto-Regular.ttf #Roboto Regular" Content="Press"></Button>
+                        <Button Command="{Binding OpenS_CardsTableCommand}" Height="40" FontFamily="/StaticFiles/Fonts/Roboto-Regular.ttf #Roboto Regular" Content="S_Cards"></Button>
+                        <Button Command="{Binding OpenStudentsTableCommand}" Height="40" FontFamily="/StaticFiles/Fonts/Roboto-Regular.ttf #Roboto Regular" Content="Students"></Button>
+                        <Button Command="{Binding OpenT_CardsTableCommand}" Height="40" FontFamily="/StaticFiles/Fonts/Roboto-Regular.ttf #Roboto Regular" Content="T_Cards"></Button>
+                        <Button Command="{Binding OpenTeachersTableCommand}" Height="40" FontFamily="/StaticFiles/Fonts/Roboto-Regular.ttf #Roboto Regular" Content="Teachers"></Button>
+                        <Button Command="{Binding OpenThemesTableCommand}" Height="40" FontFamily="/StaticFiles/Fonts/Roboto-Regular.ttf #Roboto Regular" Content="Themes"></Button>
                     </StackPanel>
                 </ScrollViewer>
 

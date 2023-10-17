@@ -14,8 +14,8 @@ namespace LibraryEF_Context.Entitys
         public int Id_Book { get; set; }
 
         public int Id_Lib { get; set; }
-        public DateTime? DateOut { get; set; }
-        public DateTime DateIn { get; set; }
+        public DateTime DateOut { get; set; }
+        public DateTime? DateIn { get; set; }
 
 
 

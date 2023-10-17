@@ -25,10 +25,7 @@ namespace LibraryEF_Context.Migrations
             modelBuilder.Entity("LibraryEF_Context.Entitys.Author", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("FirstName")
                         .IsRequired()
@@ -46,13 +43,9 @@ namespace LibraryEF_Context.Migrations
             modelBuilder.Entity("LibraryEF_Context.Entitys.Book", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
                     b.Property<string>("Comment")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Id_Author")
@@ -96,10 +89,7 @@ namespace LibraryEF_Context.Migrations
             modelBuilder.Entity("LibraryEF_Context.Entitys.Category", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -113,10 +103,7 @@ namespace LibraryEF_Context.Migrations
             modelBuilder.Entity("LibraryEF_Context.Entitys.Department", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -130,10 +117,7 @@ namespace LibraryEF_Context.Migrations
             modelBuilder.Entity("LibraryEF_Context.Entitys.Faculty", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -147,10 +131,7 @@ namespace LibraryEF_Context.Migrations
             modelBuilder.Entity("LibraryEF_Context.Entitys.Group", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("Id_Faculty")
                         .HasColumnType("int");
@@ -169,10 +150,7 @@ namespace LibraryEF_Context.Migrations
             modelBuilder.Entity("LibraryEF_Context.Entitys.Lib", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("FirstName")
                         .IsRequired()
@@ -190,10 +168,7 @@ namespace LibraryEF_Context.Migrations
             modelBuilder.Entity("LibraryEF_Context.Entitys.Press", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -207,17 +182,15 @@ namespace LibraryEF_Context.Migrations
             modelBuilder.Entity("LibraryEF_Context.Entitys.S_Card", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("DateIn")
+                    b.Property<DateTime?>("DateIn")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("DateOut")
-                        .IsRequired()
-                        .HasColumnType("datetime2");
+                    b.Property<DateTime>("DateOut")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValue(new DateTime(2023, 10, 17, 22, 2, 48, 97, DateTimeKind.Local).AddTicks(57));
 
                     b.Property<int>("Id_Book")
                         .HasColumnType("int");
@@ -242,10 +215,7 @@ namespace LibraryEF_Context.Migrations
             modelBuilder.Entity("LibraryEF_Context.Entitys.Student", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("FirstName")
                         .IsRequired()
@@ -272,17 +242,15 @@ namespace LibraryEF_Context.Migrations
             modelBuilder.Entity("LibraryEF_Context.Entitys.T_Card", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("DateIn")
+                    b.Property<DateTime?>("DateIn")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("DateOut")
-                        .IsRequired()
-                        .HasColumnType("datetime2");
+                    b.Property<DateTime>("DateOut")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValue(new DateTime(2023, 10, 17, 22, 2, 48, 97, DateTimeKind.Local).AddTicks(6135));
 
                     b.Property<int>("Id_Book")
                         .HasColumnType("int");
@@ -307,18 +275,17 @@ namespace LibraryEF_Context.Migrations
             modelBuilder.Entity("LibraryEF_Context.Entitys.Teacher", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
                     b.Property<string>("FirstName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Id_Dep")
                         .HasColumnType("int");
 
                     b.Property<string>("LastName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -331,10 +298,7 @@ namespace LibraryEF_Context.Migrations
             modelBuilder.Entity("LibraryEF_Context.Entitys.Theme", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Name")
                         .IsRequired()

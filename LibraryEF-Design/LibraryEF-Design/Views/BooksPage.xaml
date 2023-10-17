@@ -9,6 +9,20 @@
       Title="BooksPage">
 
     <Grid>
-        
+        <DataGrid VerticalScrollBarVisibility="Visible" Name="datagrid" AutoGenerateColumns="False" ItemsSource="{Binding Books,UpdateSourceTrigger=PropertyChanged}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id,Mode=TwoWay}"/>
+                <DataGridTextColumn Header="Name" Binding="{Binding Name,Mode=TwoWay}"/>
+                <DataGridTextColumn Header="Pages" Binding="{Binding Pages,Mode=TwoWay}"/>
+                <DataGridTextColumn Header="YearPress" Binding="{Binding YearPress,Mode=TwoWay}"/>
+                <DataGridTextColumn Header="Id_Theme" Binding="{Binding Id_Theme,Mode=TwoWay}"/>
+                <DataGridTextColumn Header="Id_Category" Binding="{Binding Id_Category,Mode=TwoWay}"/>
+                <DataGridTextColumn Header="Id_Author" Binding="{Binding Id_Author,Mode=TwoWay}"/>
+                <DataGridTextColumn Header="Id_Press" Binding="{Binding Id_Press,Mode=TwoWay}"/>
+                <DataGridTextColumn Header="Comment" Binding="{Binding Comment,Mode=TwoWay}"/>
+                <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity,Mode=TwoWay}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button HorizontalAlignment="Right" VerticalAlignment="Top" Margin="5" Content="Save Changes" Width="120" Height="30" Command="{Binding SaveChangesCommand}" />
     </Grid>
 </Page>

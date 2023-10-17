@@ -9,6 +9,13 @@
       Title="GroupsPage">
 
     <Grid>
-        
+        <DataGrid VerticalScrollBarVisibility="Visible" Name="datagrid" AutoGenerateColumns="False" ItemsSource="{Binding Groups, UpdateSourceTrigger=PropertyChanged}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id, Mode=TwoWay}" />
+                <DataGridTextColumn Header="Name" Binding="{Binding Name, Mode=TwoWay}" />
+                <DataGridTextColumn Header="Id_Faculty" Binding="{Binding Id_Faculty, Mode=TwoWay}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button HorizontalAlignment="Right" VerticalAlignment="Top" Margin="5" Content="Save Changes" Width="120" Height="30" Command="{Binding SaveChangesCommand}" />
     </Grid>
 </Page>
